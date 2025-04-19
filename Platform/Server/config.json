@@ -1,0 +1,10 @@
+{
+    "updated": true,
+    "session": true,
+    "date_affectation_automatique": "2025-06-08 17:19:00",
+    "reminder_attribution_automatique": true,
+    "soumission_sujet": true,
+    "date_soumission_sujet": "2025-02-08 12:00:00",
+    "reminder_soumission_sujet": true,
+    "nombre_choix_max": "3"
+}

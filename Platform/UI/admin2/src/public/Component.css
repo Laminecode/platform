@@ -1,0 +1,104 @@
+.action{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.icon{
+    width: 25px;
+    height: 100%;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.icon:hover{
+background-color: red;
+}
+.type_encadreur{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    align-self: flex-end;
+}
+.type_encadreur span{
+    font-size: 1rem;
+    background-color: #1a1a1a;
+    font-weight: 500;
+    padding: 3px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.type_encadreur > .indexed{
+    color: #646cff94;
+    font-size: 1.05rem;
+    background-color: #2c2b2b;
+}
+
+.stat{
+    display: flex;
+    align-items: center;
+    border: 1px solid #6b6a6a;
+    border-radius: 8px;
+    gap: 1rem;
+}
+.stat_info{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 230px;
+}
+.stat_info h2{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.stat_info p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+hr{
+    width: 100%;
+    border: 1px solid #6b6a6a;
+}
+.delet_confirm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#6b6a6a;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cofirmation{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.cofirmation span{
+    cursor: pointer;
+}
+
+.delete{
+    padding: 0.3rem 1rem;
+    background-color: red;
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
+}  
+.project {
+    flex-direction: column;
+}
+.project_more_info{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.project > h3{
+    width: 100%;
+}

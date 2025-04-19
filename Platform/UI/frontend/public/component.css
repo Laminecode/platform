@@ -1,0 +1,178 @@
+.drop_filter,
+  .notification_menu2,
+  .drop_menu2,
+  .drop_menu{
+    display: none;
+    position: absolute;
+    right: 1.7rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background-color: #232933;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    z-index: 1000;
+    transition: height 0.2s cubic-bezier(0.175,0.885,0.32,1.275)
+  }
+  .drop_menu2{
+    display: block;
+    width: 190px;
+  }
+  .notification_menu2{
+    display: block;
+    position: absolute;
+    overflow-y: scroll;
+    right: 8rem;
+  }
+  .open_filter{
+    width: 270px;
+    display: flex;
+    top: 55px;
+    flex-direction: column;
+    overflow-y:inherit;
+    border: 1px solid #454546;
+    background-color: #232933;
+    height: 300px;
+    border-radius: 4px;
+    z-index: di;
+  }
+  .drop_D{
+    right:17rem
+  }
+  .drop_O{
+    right: 0;
+  }
+  .open{
+    height: 240px;
+  }
+  .open2{
+    height: 140px;
+  }
+  .open3{
+    height: 320px;
+    padding: 8px;
+  }
+  .openM{
+    height: 280px;
+    top:30px;
+  }
+
+  .drop_menu2 li,
+  .drop_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+ 
+  .filter_value input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-color:#232933 ; 
+    border: 0; 
+    cursor: pointer; 
+  }
+  
+  .filter_value input[type="checkbox"]:checked::before {
+    content: '\2713'; 
+    display: block;
+    text-align: center;
+    line-height: 20px; 
+    font-size: 16px; 
+    color: #fff; 
+  }
+
+  .filter_value{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.9rem;
+    height: 30px;
+  }
+
+  .delet_confirm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#6b6a6a;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hidden{
+  display: none;
+}
+
+.cofirmation{
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.cofirmation span{
+  cursor: pointer;
+}
+
+.delete{
+  padding: 0.3rem 1rem;
+  background-color: red;
+  border-radius: 5px;
+}
+.notify_alert{
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+.notification_item {
+  background-color: #2b2f3a; /* Slightly lighter dark background for items */
+  border-radius: 5px; /* Rounded corners for items */
+  padding: 8px; /* Padding within each item */
+  margin-bottom: 8px; /* Space between items */
+  transition: background-color 0.3s ease;
+}
+.notification_item:hover {
+  background-color: #3c4150; /* Darker background on hover */
+}
+
+.notification_date, .notification_type, .notification_message {
+  margin-bottom: 5px; /* Space between text lines */
+}
+
+.notification_date {
+  font-size: 0.8rem; /* Smaller font size for date */
+  color: #b0b0b0; /* Lighter color for date */
+}
+
+.notification_type {
+  font-weight: bold; /* Bold font for type */
+}
+
+.notification_message {
+  font-size: 1rem; /* Default font size for message */
+}
+
+
+  @media (max-width: 768px) {
+    .links, .join{
+      display: none;
+    }
+
+    .drop_menu,.toggel-btn{
+      display: block;
+    }
+  }

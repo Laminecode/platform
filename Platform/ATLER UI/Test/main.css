@@ -1,0 +1,234 @@
+
+encadreur-card {
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	border: solid 1px red;
+	width: 100%;
+
+	--header-height : 25%;
+	--main-section-height : calc(100% - var(--header-height));
+
+	header {
+		display: flex;
+		flex-direction: row;
+		height: var(--header-height);
+		border: solid 1px black;
+
+		/* --pic-width: 1 */
+
+		profile-pic {
+			height: 100%;
+			width: max-content;
+			border: solid 1px yellow;
+
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		title {
+			
+			--padding: 10px;
+
+			all: unset;
+			font-size: 30px;
+			padding-left: var(--padding);
+			display: flex;
+			align-items: center;
+			width: 100%;
+			/* width: calc(100% - var(--padding)); */
+			height: 100%;
+			border: solid 1px blue; 
+			/* background-color: red; */
+		}
+	}
+	
+	main-section {
+		display: flex;
+		flex-direction: row;
+		height: var(--main-section-height);
+		width: 100%;
+		border: solid 1px green;
+
+		
+		--extra-info-width : 50%;
+		--desc-width : calc(100% - var(--extra-info-width));
+		
+		
+		desc {
+
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: var(--desc-width);
+			border: solid 1px peru;
+
+			div {
+				all: unset;
+				display: flex;
+				flex-direction: column;
+				height: 50%;
+				width: 100%;
+				border: solid 1px brown;
+
+
+				--title-height : 40%;
+				--data-height : calc(100% - var(--title-height));
+
+				title {
+					all: unset;
+					height: var(--title-height);
+					width: 100%;
+					font-size: 20px;
+					border: solid 1px rebeccapurple;
+				}
+				data {
+					height: var(--data-height);
+					width: 100%;
+					font-size: 17px;
+					border: solid 1px red;
+				}
+			}
+		}
+
+		extra-info {
+			display: flex;
+			flex-direction: column;
+			width: var(--extra-info-width);
+			height: 100%;
+			border: solid 1px green;
+			
+			div {
+				all: unset;
+				display: flex;
+				flex-direction: column;
+				height: 50%;
+				width: 100%;
+				border: solid 1px brown;
+
+
+				--title-height : 40%;
+				--data-height : calc(100% - var(--title-height));
+				title {
+					all: unset;
+					height: var(--title-height);
+					width: 100%;
+					font-size: 20px;
+					border: solid 1px rebeccapurple;
+				}
+				data {
+					height: var(--data-height);
+					width: 100%;
+					font-size: 17px;
+					border: solid 1px red;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* .drop-list {
+	all: unset;
+	width: 100px;
+	height: fit-content;
+	border: none;
+	font-size: xx-large;
+	header- {
+		background-color: green;
+		border: none;
+		width: 100%;
+		display: flex;
+	}
+
+	body- {
+		width: auto;
+		option- {
+			background-color: red;
+			--hover : green;
+			--not-hover : tranparent;
+			font-size: larger;
+		}
+	}
+} */
+
+drop-list {
+	width: 200px;
+	height: fit-content;
+	/* // border: 1px solid black; */
+
+	header- {
+		width: 100%;
+		height: fit-content;
+		border: 1px solid black;
+		background-color: lightgrey;
+	}
+	body- {
+		width: 100%;
+		height: fit-content;
+		/* // border: 1px solid black; */
+		.option-idle {
+			background-color: transparent;
+		}
+		.option-hover {
+			background-color: red;
+		}
+		.option-selected {
+			background-color: blue;
+		}
+		option- {
+			width: 100%;
+			height: fit-content;
+			border: 1px solid black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			user-select: none;
+
+		}
+	}
+}
+.drop-list {
+	width: 200px;
+	height: fit-content;
+	/* // border: 1px solid black; */
+
+	header- {
+		width: 100%;
+		height: fit-content;
+		border: 1px solid black;
+		background-color: lightgrey;
+	}
+	body- {
+		width: 100%;
+		height: fit-content;
+		/* // border: 1px solid black; */
+		.option-idle {
+			background-color: transparent;
+		}
+		.option-hover {
+			background-color: red;
+		}
+		.option-selected {
+			background-color: blue;
+		}
+		option- {
+			width: 100%;
+			height: fit-content;
+			border: 1px solid black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			user-select: none;
+
+		}
+	}
+}
+
+.drop-list2 {
+	width: 100px;
+}

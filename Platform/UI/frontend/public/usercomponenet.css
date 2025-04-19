@@ -1,0 +1,99 @@
+
+.line{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color:#383232;
+    padding: 0.5rem 1rem;
+    border-radius:0.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.line:hover{
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3);
+}
+.name{
+    font-size: 1.05rem;
+    color: white;
+}
+.userdetails>h1> a:hover{
+    text-decoration: underline;
+}
+.user_id{
+    font-size: 1rem ;
+    color: #6b6a6a;
+    font-weight: 400;
+}
+p{
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_etu{
+    align-items: space-between;
+    width: 55%;
+}
+.profile img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user .userdetails{
+    margin-left: 1.5rem;
+    line-height: 1.3;
+    width: 170px;
+
+}
+.user > .row {
+    display: flex;
+    width: 100%;
+    align-items: space-between;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.specialite{
+    width: 100px;
+}
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.status > .visible{
+    display: inline-block;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    background-color: limegreen;
+}
+.status p {
+    margin-left:0.5rem ;
+}
+.status > span{
+    background-color: red;
+}
+.star_icon {
+    color: grey; 
+    cursor: pointer;
+}
+
+.star_icon.gold {
+    background-color: gold; 
+}
+/* .icon{
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+} */

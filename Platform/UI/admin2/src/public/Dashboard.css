@@ -1,0 +1,317 @@
+.Dashboard-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.dashboard-sidebar{
+    position:fixed;
+    width: 20%;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.hidden_side_bar {
+    display: none;
+  }
+  .active_side{
+    display: flex;
+}
+  .admin_profil{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    width: 100%;
+  }
+  .admin_img{
+    width: 50px;
+    height: 50px;
+    margin-left: 17px;
+    border-radius: 50%;
+  }
+.side_bar_icon{
+    display: none;
+    position: absolute;
+    z-index: 1001;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #646cff94;
+}
+.dashboard-sidebar > :nth-child(1){
+    margin-top: 25px;
+}
+.Dashboard-container.form-displayed > *:not(.create-container) {
+    pointer-events: none;
+}
+  .create-container {
+    pointer-events:auto;
+}
+.main_page_icon{
+    margin-left: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #646cff94;
+}
+.side_menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+    overflow: hidden;
+    transition: width 0.8s ease-in-out;
+}
+
+.side_menu >div{
+    width: 100%;
+    height: 37px;
+    transition: background-color 0.8s ease-in-out;
+}
+.side_menu>div:hover ,.active{
+    background-color: rgba(100, 108, 255, 0.667);
+}
+.side_menu >div>a{
+    color: white;
+    display: flex;
+    width: 100%;
+    font-size: 1.03rem;
+    height: 100%;
+    padding-left: 30px;
+    align-items: center;
+    gap: 30px;
+    letter-spacing: 1.4px;
+}
+.main-content{
+    width: 77%; 
+    margin-left: 22%;  
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.dashboard-widgets{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.dashboard-widgets > .col{
+    display: flex;
+    gap: 10px;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+
+.widget{
+    display: flex;
+    width: 300px;
+    gap: 5px;
+    border-radius: 7px;
+    padding: 15px;
+    border: 1px solid rgb(36, 35, 35);
+    height: fit-content;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    align-items: center;
+    animation: widgetAnimation 1s ease-in-out;
+}
+.widget_general,.widget_details{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* .widget_details{
+    min-width:150px ;
+} */
+.widget_general> div> h2 {
+    font-size: 2rem;
+    color: #646cff94;
+}
+.widget_general>  h1{
+    margin-right: 8px;
+    font-size: 2.8rem;
+}
+.widget_general >div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.widget_general > div> h3 {
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}
+.widget:hover {
+    background-color: #646cff94;
+    color: white;
+}
+.widget:hover h2{
+    color: white;
+}
+.widget_details >h4{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 2px 5px; 
+    border-radius: 5px;
+    background-color: #2c2c2c;
+}
+@keyframes widgetAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        background-color: #1a1a1a;
+    }
+    50% {
+        background-color: #646cff94;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        background-color: #1a1a1a;
+    }
+}
+
+.btn_create{
+    background-color: rgb(28, 173, 28);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    border: 1px solid white;
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.4s ease-in-out;
+}
+
+
+.btn_create:hover{
+    background-color: #646cffaa;
+    color: #666666;
+}
+    
+.logout{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: red;
+    width: 90%;
+}
+@media  (max-width: 900px) {
+    .dashboard-sidebar{
+        display: none;
+    }
+    .hidden_side_bar{
+        top: 0;
+        left: 0;
+        width: 78%;
+        z-index: 1000;
+        position:fixed;
+        background-color: #1a1a1a;
+        color: white;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+    }
+    .side_bar_icon{
+        display: block;
+        top: 20px;
+        left: 20px;
+        position: fixed;
+    }
+    .active_side_bar_icon{
+        top: 20px;
+        right: 20px;
+    }
+    .Dashboard-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-content{
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+    
+}
+@media  (max-width: 768px) {
+    .dashboard-sidebar{
+        display: none;
+    }
+    .hidden_side_bar{
+        top: 0;
+        left: 0;
+        width: 78%;
+        z-index: 1000;
+        position:fixed;
+        background-color: #1a1a1a;
+        color: white;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+    }
+    .side_bar_icon{
+        display: block;
+        top: 20px;
+        left: 20px;
+    }
+    .active_side_bar_icon{
+        top: 20px;
+        right: 20px;
+    }
+    .Dashboard-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-content{
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+    .main-content > div{
+        width: 90%;
+    }
+    .dashboard-widgets{
+        gap: 20px;
+    }
+    .widget{
+        width: 75%;
+    }
+    .btn_create{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}

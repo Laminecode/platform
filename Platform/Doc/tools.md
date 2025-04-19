@@ -1,0 +1,3 @@
+- download `python 3.12.2`
+- install latest version of django `pip install django`
+- install django-cors `pip install django-cors-headers`

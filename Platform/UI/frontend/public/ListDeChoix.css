@@ -1,0 +1,96 @@
+.list_de_choix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  width: 90%;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.choix-item {
+  border: 1px solid #444;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choix-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.choix-item h2 {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.choix-item h2 > a {
+  color: rgb(236, 148, 100);;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.choix-item h2 > a:hover {
+  text-decoration: underline;
+}
+
+.choix-item p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.choix-item p > a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.choix-item p > a:hover {
+  text-decoration: underline;
+}
+
+.remove-from-choix {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.remove-from-choix:hover {
+  transform: scale(1.1);
+}
+
+.page-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.page-description {
+  text-align: center;
+  color: #bbb;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.drag-item {
+  cursor: grab;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.drag-item:active {
+  opacity: 0.8;
+}

@@ -1,0 +1,178 @@
+.Create_page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    height: auto;
+    padding-bottom: 40px;
+
+}
+.create_menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 62%;
+    gap: 20px;
+}
+.sjt_header{
+    margin-bottom: 15px;
+}
+.sjt_header> h4 {
+    font-size: 1.6rem;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+   
+}
+hr{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(92, 92, 92) ;
+    border: 0;
+}
+.sjt_value{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 30px;
+}
+.sjt_value>span{
+    font-size: 0.85rem;
+    color: gray;
+    text-align: justify;
+}
+.sjt_princip{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.sjt_visible{
+    display: flex;
+    align-self: flex-end;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.sjt_titre{
+    display: flex;
+    gap:10px;
+    padding: 0px 60px;
+}
+.sjt_titre >input{
+    width: 500px;
+    height: 30px;
+    border-radius:3px;
+    font-weight: 550;
+    color: #bd561d;
+    letter-spacing: 0.7px;
+    font-size: 1.04rem;
+    border: 1px solid gray;
+    background-color:  #161b22;
+    padding: 7px;
+}
+ .add_to_list>input {
+    width: 260px;
+    height: 30px;
+    font-weight: 550;
+    border-radius:4px;
+    padding: 7px;
+    background-color: #161b22;
+    border: 1px solid gray;
+
+}
+.sjt_list {
+    display: flex;
+    gap: 10px;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0px 30px; 
+}
+
+.add_to_list{
+    display: flex;
+    gap: 5px;
+    align-items: center;;
+}
+
+textarea{
+    width: 95%;
+    border-radius:5px ;
+    height: 250px;
+    font-size: 1.05rem;
+    padding-left:7px ;
+    justify-content: center;
+    background-color: #161b22;
+    border: 1px solid gray;
+    letter-spacing: 0.5px;
+}
+.sjt_value >select, .add_to_list >select{
+    width: 390px;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    background-color: #161b22;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid gray;
+
+}
+.sjt_create{
+    height: 33px;
+    width: auto;
+    padding: 0px 5px;
+    border-radius: 4px;
+    background-color: rgb(31, 139, 31);
+    align-self: flex-end;
+}
+label{
+    font-weight: 500;
+    font-size: 1.035rem;
+    letter-spacing: 1px;
+}
+label > span{
+font-weight: 100;
+font-size: 0.9rem;
+}
+.ic_add_list{
+    font-size: 2rem;
+    color: rgb(31, 139, 31);
+    cursor: pointer;
+    font-weight: 600;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .Create_page{
+        width: 100%;
+    }
+    .create_menu{
+        width: 100%;
+    }
+    .sjt_header > h4{
+       text-align: center;
+    }
+    .sjt_princip{
+        flex-direction: column;
+    }
+    .sjt_visible{
+        align-self: flex-start;
+    }
+    .sjt_titre{
+        padding: 0px 10px;
+    }
+    .sjt_titre >input{
+        width: 75%;
+    }
+    
+    .sjt_value >select, .add_to_list >select{
+        width: 85%;
+    }
+    .add_to_list>input {
+        width: 85%;
+    }
+    textarea{
+        width: 95%;
+    }
+}

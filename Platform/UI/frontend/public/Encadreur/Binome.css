@@ -1,0 +1,68 @@
+.binome{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(80, 72, 72);
+}
+.binome_titre > a {
+    border-bottom: 0px;
+    color: rgb(207, 172, 107);
+    font-size: 1.6rem;
+}
+.binome_titre > a:hover{
+    color: rgb(207, 172, 107);
+    text-decoration: underline;
+    border:0px ;
+}
+.binomes_membre{
+    display: flex;
+    justify-content: space-between;
+}
+.binome_etu > h4 >a{
+   border: 0px;
+}
+.binome_etu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    padding: 5px 10px; 
+    background-color: rgb(54, 52, 52);
+}
+.binome_profile{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+}
+.binome_profile img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .binome{
+        width: 100%;
+    }
+    .binomes_membre{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .binome_etu{
+        padding: 5px;
+    }
+    .binome_etu > h4{
+        font-size: 1rem;
+    }
+    .binome_etu > h4 >a{
+        font-size: 1rem;
+    }
+    .binome_titre > a{
+        font-size: 1.5rem;
+    }
+}

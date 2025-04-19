@@ -1,0 +1,152 @@
+
+.line{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius:0.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.line:hover{
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3);
+}
+.name{
+    font-size: 1rem;
+    color: white;
+}
+.user_id{
+    font-size: 1rem ;
+    color: #6b6a6a;
+    font-weight: 400;
+}
+p{
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 300px;
+}
+.user_etu{
+    align-items: space-between;
+    width: 55%;
+}
+.user-admin{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 1rem;
+}
+.Admin-details{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.profile img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user .userdetails{
+    margin-left: 1.5rem;
+    line-height: 1.3;
+    width: 170px;
+
+}
+.user > .row {
+    display: flex;
+    width: 100%;
+    align-items: space-between;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.specialite{
+    width: 100px;
+}
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.status > .visible , .status > .invisible{
+    display: inline-block;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    background-color: limegreen;
+}
+.status p {
+    margin-left:0.5rem ;
+}
+.status > .invisible{
+    background-color: red;
+}
+
+.icon{
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.icon:hover{
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.5);
+    background-color: #6b6a6a;
+}
+@media screen and (max-width: 768px){
+    .list{
+        width: 97%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .line{
+        width: 100%;
+        padding: 2px;
+    }
+    .user{
+        width: 100%;
+        flex-direction: column;
+    }
+    .user_etu{
+        width: 100%;
+    }
+    .user-admin{
+        width: 100%;
+    }
+    .user .userdetails{
+        width: 100%;
+    }
+    .user > .row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .specialite{
+        width: 100%;
+    }
+    .status p {
+        display: none;
+    }
+    .status > .visible , .status > .invisible{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .icon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+} 

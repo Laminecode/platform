@@ -1,0 +1,233 @@
+.E_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .nav_suite{
+    height: 40px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    padding-bottom: 1px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 1px solid #555558;
+  }
+.E_page{
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    padding: 10px;
+}
+  .side {
+    width: 25%;
+    z-index: 100;
+    border-radius: 10px;
+    /* background-color: rgba(255, 255, 255, 0.01); */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top:20px ;
+    margin-left:25px ;
+  }
+  .Date_important{
+    border: 1px solid #454546;
+    background-color: #333333;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 18px;
+    width: 80%;
+  }
+  
+  .T_info,
+  .info{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .T_info{
+    align-items: center;
+  }
+  .full_name {
+    font-size: 1.5rem;
+    color: white; /* Set text color */
+  }
+  .userPicture{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 80%;
+    height: 255px;
+  }
+  .icon{
+    margin-right:8px ;
+  }
+  .div_link{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  .nav_suite > a >.div_link {
+    padding: 3px 9px;
+  } 
+  .nav_suite > a > div{
+    font-size: 1.1rem;
+    font-weight: 550;
+  }
+  .nav_suite > a > .div_link:hover{
+    color: rgb(230, 237, 243);
+    background-color: #555558;
+    border-radius: 6px;
+
+  }
+  .nav_suite > a{
+    padding-bottom: 8px;
+  }
+
+  .nav_suite > a:hover{
+    color: white;
+  }
+.more_info{
+    margin-top: 20px;
+}
+.editProfile{
+    height: 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    background-color: #242427;
+    border: 1px solid #454546;
+}
+.editProfile2{
+  display: none;
+  height: 30px;
+  width: 94%;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  background-color: #323235;
+  border-radius: 4px;
+  border: 1px solid #454546;
+}
+.editProfile:hover,.editProfile2:hover{
+  background-color: #353536;
+  border: 1px solid #454546;
+}
+.more_info > h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.nav_suite>   .drop_icon_menu{
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+
+@media (max-width: 768px) {
+    .E_page{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .side {
+      width: 100%;
+      margin-top: 20px;
+      flex-direction: row;
+      align-items: center;
+      height: auto;
+      margin-left: 0px;
+      padding-left: 10px;
+      gap: 25px;
+    } 
+    .more_info {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      align-items: center;
+    }
+    .editProfile{
+     display: none;
+    }
+    .editProfile2{
+      display: block;
+
+    }
+    .T_info,
+    .info {
+    width: 100%;
+    align-items: center;
+    height: auto ;
+    justify-content: center;
+    }
+    .userPicture {
+      width: 150px;
+      height: 150px;
+    }
+    .hr{
+      display: block;
+      width: 90%;
+      border: 1px solid #333335;
+    }
+    
+    .nav_suite > .active{
+      padding-bottom: 8px;
+  }
+  .nav_suite{
+    width: 100%;
+    height: 15px;
+  }
+  .nav_suite > a {
+    font-size: 0.9; 
+    display: none;
+
+  } 
+  .more_info > h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .nav_suite > a >.div_link {
+    padding: 3px 4px;
+  } 
+  .nav_suite>   .drop_icon_menu{
+    display: block;
+    justify-self: flex-end;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .userPicture{
+    height: 180px;
+  }
+}
